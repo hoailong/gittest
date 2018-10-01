@@ -1,0 +1,10 @@
+﻿• git status				//ktra gitthub
+• git add ten_file 			//
+	(hoặc * nếu muốn add tất cả file chưa đc add)  
+• git commit -m"comment_lệnh"  		//
+• git push		     		// cập nhật lên github web
+• git log			     	// xem mã các thay đổi đã thực hiện
+	(nếu đã lấy đc mã thì ấn Ctr+C)
+• git revert mã_đã_cop	     		//quay lại thời điểm trc khi thực hiện mã_đã_cop
+	(xong thì ấn Esc,rồi Shift+:, rồi q,rồi Enter)
+• git pull		     		// cập nhật file theo những gì đã thay đổi trên web
