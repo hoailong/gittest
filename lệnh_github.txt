@@ -1,10 +1,53 @@
-﻿• git status				//ktra gitthub
-• git add ten_file 			//
+﻿• git clone link_https_trên_web		// thao tác vs repository trên web
+
+• git init tên_repository_mới		// tạo mới repository
+
+• touch tên_file			// tạo file mới rỗng
+
+• git status				// xem ds file đã ở trong Stagging Area
+
+• git add ten_file 			// đưa file về trạng thái Stracked
 	(hoặc * nếu muốn add tất cả file chưa đc add)  
-• git commit -m"comment_lệnh"  		//
+
+• git commit -m "comment_lệnh"  	// lưu sự thay đôi
+• git commit -a -m "comment_lệnh"	// lưu sự thay đổi k cần add nữa
+
 • git push		     		// cập nhật lên github web
-• git log			     	// xem mã các thay đổi đã thực hiện
+
+• git log			     	// xem lịch sử commit
 	(nếu đã lấy đc mã thì ấn Ctr+C)
+
+• git log -p				// xem chi tiết
+• git log -1				// xem lần commit mới nhất
+	--since, --after: Xem các lần commit kể từ ngày nhất định.
+	--until: Xem các lần commit trước từ ngày nhất định.
+	--author: Xem các lần commit của một người nào đó.
+	eg: git log --author=hoailong129@gmail.com --pretty="%s" (%an,%ae,$ad,..)
+	--grep: Lọc các chuỗi trong log và in ra.
+
 • git revert mã_đã_cop	     		//quay lại thời điểm trc khi thực hiện mã_đã_cop
 	(xong thì ấn Esc,rồi Shift+:, rồi q,rồi Enter)
+
 • git pull		     		// cập nhật file theo những gì đã thay đổi trên web
+
+• rm tên_file				//đưa tên_file về dạng untracked
+• rm -f tên_file			// xóa hẳn file
+
+• git tag -a ten_tag-an -m "comment"	//tạo tag
+• git show ten_tag-an
+
+• cat .git/HEAD				// xem đang làm việc với branch nào
+
+• git branch				// xem các branch đã có
+• git branch tên_branch_mới		// tạo mới 1 branch
+
+• git checkout tên_branch		// chuyển sang làm việc với branch tên_branch
+
+• git merge tên_branch			// gộp dữ liệu từ tên_branch về branch đang làm vc
+
+• git branch -d tên_branch		// xóa branch
+
+
+//xử lý trên remote- repository:
+• git remote -v				// kiểm tra tên remote
+• git remote rename tên_cũ tên_mới	// đổi tên
